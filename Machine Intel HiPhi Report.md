@@ -11,8 +11,11 @@ Video Games form a rapidly growing industry moving towards an artistic form that
 
 # Relevance to Machine Intelligence #
 
+* The computer science department at UC Berkeley has developed an implementation of Pac-Man using Python to illustrate basic Artificial Intelligence concepts, such as state-space searching, probabilistic inferencing, and reinforcement learning. ([Berkeley, n.d.](http://ai.berkeley.edu/project_overview.html))
 
 # Key Historical Facts Timeline #
+
+Game AI shares its foundations with the rise of digital processing. Claude Shannon and Alan Turing started developing chess programs as early as 1950. Board games were the popular choice for experimenting with Artificial Intelligence due to their nature of perfect information - the entire state of the game can be captured by the computer. They are typically non-trivial search problems with no well-defined path to a given solution as the involvement of an opponent introduces a degree of uncertainty ([Middleton, 2002](http://web.stanford.edu/group/htgg/sts145papers/zmiddleton_2002_1.pdf)).
 
 ## 1950 ##
 
@@ -35,3 +38,4 @@ Video Games form a rapidly growing industry moving towards an artistic form that
 1. http://www.cs.rochester.edu/~brown/242/assts/termprojs/games.pdf
 2. http://www.newyorker.com/magazine/1952/08/02/it
 3. http://lmc.gatech.edu/~mateas/publications/MateasDIGRA2003.pdf
+4. http://web.stanford.edu/group/htgg/sts145papers/zmiddleton_2002_1.pdf
