@@ -26,7 +26,7 @@ During the early years of video games, AI was not a feature due to the simplicit
 ## 1960 ##
 ## 1970 ##
 
-* Atari release Pong in 1972, a table tennis simulator that could be played between two people, but ore importantly, with a computer controller opponent. The core intelligence was established using discrete logic
+* Atari release Pong in 1972, a table tennis simulator that could be played between two people, but ore importantly, with a computer controller opponent. The core intelligence was established using discrete logic, and hence was "hardcoded" into the game.
 
 > If the Al player simply stopped tracking the ball every eight frames [due to a skip in
 > adjusting its vertical position every eight frames], it would be hopelessly 
@@ -38,15 +38,22 @@ During the early years of video games, AI was not a feature due to the simplicit
 
 (Monfort, Bogost, 2009)
 
+* Space Invaders (1978) introduced a new form of intelligence through stored patterns.
+
 ## 1980 ##
 
 * Pac-Man, released in 1980, introduced AI patterns in maze environments, with individual personalities assigned to each enemy. 
 
 ## 1990 ##
 
-Dragon Quest, a role playing game developed by Chunsoft for the NES in 1990, introduced an element of Artificial Intelligence through its "tactics" system. This allowed players to provide battle strategies to their party members such as healing, attacking, etc. ([Reeves, 2011](http://www.gameinformer.com/b/features/archive/2011/02/14/a-warrior-s-quest-a-retrospective-of-square-enix-s-classic-rpg-series.aspx)). Later instalments of the Dragon Quest series allowed tactics to be set for individual team members, rather than party wide.
+* Dragon Quest, a role playing game developed by Chunsoft for the NES in 1990, introduced an element of Artificial Intelligence through its "tactics" system. This allowed players to provide battle strategies to their party members such as healing, attacking, etc. ([Reeves, 2011](http://www.gameinformer.com/b/features/archive/2011/02/14/a-warrior-s-quest-a-retrospective-of-square-enix-s-classic-rpg-series.aspx)). Later instalments of the Dragon Quest series allowed tactics to be set for individual team members, rather than party wide.
+* Reat Time Strategy (RTS) games emerged
+* Creatures
 
 ## 2000 ##
+
+* The Sims, a life simulation game, is released.
+
 ## 2010 ##
 
 # Applications in Research #
@@ -59,3 +66,4 @@ Dragon Quest, a role playing game developed by Chunsoft for the NES in 1990, int
 4. http://web.stanford.edu/group/htgg/sts145papers/zmiddleton_2002_1.pdf
 5. http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false
 6. http://www.gameinformer.com/b/features/archive/2011/02/14/a-warrior-s-quest-a-retrospective-of-square-enix-s-classic-rpg-series.aspx
+7. http://research.microsoft.com/en-us/projects/ijcaiigames/
