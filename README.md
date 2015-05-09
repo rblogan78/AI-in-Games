@@ -15,4 +15,4 @@ A presentation showcasing the progression of Artificial Intelligence in video ga
 # Project Documents
 
 * [Report](https://github.com/Aggregates/AI-in-Games/blob/master/Machine%20Intel%20HiPhi%20Report.md)
-* [Presentation](https://docs.google.com/presentation/d/1LOLxUUffy_dIAETy8nvu-Xp1eM63_2cnVMOKhUMDR_8/edit?usp=sharing)
+* The presentation is in the `presentation/` folder using reveal.js
