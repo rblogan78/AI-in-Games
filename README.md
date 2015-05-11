@@ -7,7 +7,7 @@ A presentation showcasing the progression of Artificial Intelligence in video ga
 
 # Members #
 
-* [Beau Gibson](https://github.com/andrewhoffman)
+* [Beau Gibson](https://github.com/beaurepair)
 * [Tyler Haigh](https://github.com/TylerHaigh)
 * [Simon Hartcher](https://github.com/deevus)
 * [Robert Logan](https://github.com/rblogan78)
