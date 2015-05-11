@@ -16,6 +16,7 @@
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Code syntax highlighting -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -137,6 +138,66 @@
 					</small>
 					</script>
 				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					## Random Numbers in Games
+
+					* Random number generators (RNG) are integral to game AI
+					* Makes games feel immersive and "real"
+					* Drives many decisions (events) of in game objects
+						* Graphical effects like rain or transitions
+						* Frequency and choice of sound effects
+						* Should an enemy attack or run away?
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+					<img src="images/Doom_logo.png" alt="Doom Logo" class="image-only">
+
+					* "Random numbers" are values 0-255 stored in an array
+					```
+					unsigned char rndtable[256] = {
+					    0,   8, 109, 220, 222, 241, 149, 107,  75, 248, 254, 140,  16,  66 ,
+					    52, 140, 202, 120,  68, 145,  62,  70, 184, 190,  91, 197, 152, 224 ,
+					    /* ... */
+					    197, 242,  98,  43,  39, 175, 254, 145, 190,  84, 118, 222, 187, 136 ,
+					    120, 163, 236, 249
+					};
+					```
+					* Without it, the game doesn&#39;t work.
+
+					<small>([id software, 1997](https://github.com/id-Software/DOOM))</small>
+					</script>
+				</section>
+
+				<section data-markdown="">
+					<script type="text/template">
+						#### The Ultimate Doom
+						<iframe class="stretch" src="https://www.youtube.com/embed/K0nlO87evhY?controls=0&disablekb=1&iv_load_policy=3&start=1380" frameborder="0" allowfullscreen></iframe>
+
+						<small>
+						([World of Longplays, 2010](https://www.youtube.com/watch?v=K0nlO87evhY))
+						</small>
+					</script>
+				</section>
+
+				<section data-markdown="">
+					<script type="text/template">
+					## What happens when you remove randomness?
+
+					* Changed all values to `0x00` or `0xFF`
+						* Monsters make the same effect each time
+						* Hitscan weapons have no spread 
+						* Lights will strobe or never flicker depending on the value
+						* Damage values don&#39;t vary
+					* Monsters never make an idle sound with `0x00`. With `0xFF` however,
+					they make it constantly, drowning everything out
+
+					<small>([Jonathan Dowland, 2015](http://jmtd.net/log/deterministic_doom/))</small>
+					</script>
+				</section>
 				
 				<section data-markdown>
 					<script type="text/template">
@@ -154,9 +215,12 @@
 					
 					<small>http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#/media/File:Gospers_glider_gun.gif</small>
 					<small>http://yournameinlife.com</small>
+					<small>https://github.com/id-Software/DOOM</small>
+					<small>https://www.youtube.com/watch?v=K0nlO87evhY</small>
+					<small>http://jmtd.net/log/deterministic_doom/</small>
 					<small>http://web.stanford.edu/group/htgg/sts145papers/zmiddleton_2002_1.pdf</small>
 					<small>http://www.pi.infn.it/~carosi/chess/shannon.txt</small>
-					
+
 					</script>
 				</section>
 				
