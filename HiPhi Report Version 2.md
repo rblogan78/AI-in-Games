@@ -50,19 +50,27 @@ The primary goal of Game AI is to entertain. As such, developers tend to avoid u
 
 Researchers have redefined the role of artificial intelligence in video games by replacing all human interaction with intelligent agents.
 
-## Google AI - Deep Mind Technologies ##
+## Google AI - DeepMind Technologies ##
+
+Founded in 2011 by Dennis Hassabis, and acquired by Google in 2014, Google DeepMind aims to combine "the best techniques from machine learning and systems neuroscince to build powerful general-purpose learning algorithms" ([DeepMind, 2015](http://deepmind.com/)).
+
+In 2013, DeepMind published a report detailing the success in using Reinforcement Learning environments, and sensory data, to train a neural network to play Atari 2600 games ([NIPS, 2013](http://arxiv.org/pdf/1312.5602v1.pdf)). Using a modified Q-Learning (a model free) reinforcement learning algorithm, and stochastic gradient descent to update the network weights, their paper proposed a new deep learning model for reinforcement learning and demonstrated its effectiveness at mastering seven Atari 2600 games using only the raw pixels and game score as input.
+
+In an interview with Dennis Hassabis, their network starts off with no prioir knowledge of the game ([The Verge, 2015](http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games)). Early training interations involve the network randomly pressing mapped buttons in order to determine the basic controls and inputs. As expected with Reinforcement Learning, the network adapts to the new game by playing. An interesting observation made was that the network was unable to plan long term actions and hence, struggled with learning maze-based games, such as PacMan.
 
 ## The "Mario Lives" Project ##
 
-# Bibligraphy #
+# References #
 
-1. http://www.cs.rochester.edu/~brown/242/assts/termprojs/games.pdf
-2. http://www.newyorker.com/magazine/1952/08/02/it
-3. http://lmc.gatech.edu/~mateas/publications/MateasDIGRA2003.pdf
-4. http://web.stanford.edu/group/htgg/sts145papers/zmiddleton_2002_1.pdf
-5. http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false
-6. http://www.gameinformer.com/b/features/archive/2011/02/14/a-warrior-s-quest-a-retrospective-of-square-enix-s-classic-rpg-series.aspx
-7. http://research.microsoft.com/en-us/projects/ijcaiigames/
-8. http://www.ai-junkie.com/misc/hannan/hannan.html
-9. https://sites.google.com/site/myangelcafe/articles/history_ai
-10. http://www.pi.infn.it/~carosi/chess/shannon.txt
+1. James Wexler, *Artificial Intelligence in Games*, http://www.cs.rochester.edu/~brown/242/assts/termprojs/games.pdf, University of Rochester, 2002
+2. Grant, Lardner, *IT*, http://www.newyorker.com/magazine/1952/08/02/it, The New Yorker, 1952
+3. Michael Mateas, *Expressive AI: Games and Artifical Intelligence*, http://lmc.gatech.edu/~mateas/publications/MateasDIGRA2003.pdf, The Georgia Institute of Technology, 2003
+4. Zak Middleton, *Case History: The Evolution of Artificial Intelligence in Computer Games* http://web.stanford.edu/group/htgg/sts145papers/zmiddleton_2002_1.pdf, Stanford, 2002
+5. Nick Motfort, *Racing the Beam: The Arati Video Computer System (PLatform Studies)*, http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false, ISBN: 9780262261524
+6. Botea, Herbrich, Graepel, *Video Games and Artificial Intelligence*, http://research.microsoft.com/en-us/projects/ijcaiigames/, Microsoft Research, 2015
+7. *Interview with Jeff Hannan*, http://www.ai-junkie.com/misc/hannan/hannan.html, AI-Junkie, 2001
+8. Siyuan Xu, *History of AI Design in video games and its development in RTS games*, https://sites.google.com/site/myangelcafe/articles/history_ai, Xu, n.d.
+9. Claude Shannon, *Programming a Computer for Playing Chess*, http://www.pi.infn.it/~carosi/chess/shannon.txt Shannon, Published in Pilosophical Magazine, 1950
+10. *DeepMind Technologies*, http://deepmind.com/ DeepMind Technologies, 2015
+11. Mnih, et. al. *PLaying Atari with Deep Reinforcement Learning*, http://arxiv.org/pdf/1312.5602v1.pdf, DeepMind Technologies, Published by NIPS, 2013
+12. The Verge, *Google's AI can learn to play video games*, http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games, 2015
