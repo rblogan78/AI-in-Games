@@ -19,10 +19,11 @@ Game AI shares its foundations with the rise of digital processing. Claude Shann
 During the early years of video games, AI was not a feature due to the simplicity of the games produced, and human centred design.
 
 In 1949, Claude Shannon published the paper *Programming a Computer for Playing Chess* in which he describes how a machine can decide how to move such that it can minimise the possible loss in the worst case scenario ([Shannon, 1949](http://www.pi.infn.it/~carosi/chess/shannon.txt)). His reasons for using chess as the basis for his paper include:
-    * The legal move-set and the end goal is well defined
-    * It is neither a trivial problem, nor too difficult to calculate a viable solution
-    * There is a element of skilful thinking involved
-    * The discrete structure of chess fits well into the design of computers
+
+* The legal move-set and the end goal is well defined
+* It is neither a trivial problem, nor too difficult to calculate a viable solution
+* There is a element of skilful thinking involved
+* The discrete structure of chess fits well into the design of computers
 
 A computerised version of Nim was published in 1952, and was able to consistently win games against players 95% of the time ([The New Yorker, 1952](http://www.newyorker.com/magazine/1952/08/02/it))
 
@@ -42,13 +43,12 @@ As the arcade and video game industry began to wane in the late 80's, gamers beg
 
 ## Real Time Strategy ##
 
-## Colin McRae - Use fo Neural Networks ##
+## Colin McRae - Use of Neural Networks ##
 
 # Current Research Topics #
-
 The primary goal of Game AI is to entertain. As such, developers tend to avoid using true "academic" AI, opting for short-cuts and efficiency, whilst maintaining some level of intelligence in the system.
 
-Researchers have redefined the role of artificial intelligence in video games by replacing all human interaction with intelligent agents.
+Instead, researchers have redefined the role of artificial intelligence in video games by replacing all human interaction with intelligent agents. This concept of General Game Playing requires agents to be able to play numerous types of games without reliace on dedicated algorithms, designed specifically for a particular game. In this case, IBM's Deep Blue, the first intelligent computer to defeat the world chess champion, would not be sufficient as it was designed to play chess, and hence would not perform as well when playing checkers. ([Genesereth, Love, Pell, 2005](http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711))
 
 ## Google AI - DeepMind Technologies ##
 
@@ -58,7 +58,15 @@ In 2013, DeepMind published a report detailing the success in using Reinforcemen
 
 In an interview with Dennis Hassabis, their network starts off with no prioir knowledge of the game ([The Verge, 2015](http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games)). Early training interations involve the network randomly pressing mapped buttons in order to determine the basic controls and inputs. As expected with Reinforcement Learning, the network adapts to the new game by playing. An interesting observation made was that the network was unable to plan long term actions and hence, struggled with learning maze-based games, such as PacMan.
 
-## The "Mario Lives" Project ##
+## The "Mario Lives!" Project ##
+
+The Association for the Advancement of Artificial Intelligece (AAAI) holds an annual video competition to showcase the advances in artificial intelligence in a fun and exciting means.
+
+Computer scientists from the Cognitive Modelling Group at the University of Tubingen, Germany, submitted the *Mario Lives* project as part of this competition in 2015. Their aim was to develop an artifical agent that can become alive in its own world.
+
+In the demonstration, Mario is shown to learn from his own experiences. After jumping on Goomba, he is asked "What do you know about Goomba?". The speech recognition and context grammar that underpins the agent allows Mario to respond with "If I jump on Goomba, then it maybe dies". Mario is als shown to learn from what it is told. Mario is told "Goomba dies, when you jump on Goomba". He is able to store this information and refer to it as he responds "If I jump on Goomba, then it certainly dies". ([Ehrenfeld, et. al., 2015](https://www.youtube.com/watch?v=K0nlO87evhY))
+
+"Mario developes a schema based knowledge base, and maintains internal emotive states". These emotive states are used to drive behavioural actions. When he is hungry, Mario will collect coins.
 
 # References #
 
@@ -74,3 +82,5 @@ In an interview with Dennis Hassabis, their network starts off with no prioir kn
 10. *DeepMind Technologies*, http://deepmind.com/ DeepMind Technologies, 2015
 11. Mnih, et. al. *PLaying Atari with Deep Reinforcement Learning*, http://arxiv.org/pdf/1312.5602v1.pdf, DeepMind Technologies, Published by NIPS, 2013
 12. The Verge, *Google's AI can learn to play video games*, http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games, 2015
+13. Genesereth, Love, Pell, *General Game Playing: verview of the AAAI Competition*, http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711, AI Magazine, 2005
+14. Ehrenfeld, et. al., 2015, *Mario Lives! An Adaptive Learning AI Approach for Generating a Living and Conversing Mario Agent* https://www.youtube.com/watch?v=AplG6KnOr2Q, AAAI, 2015
