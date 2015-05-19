@@ -27,27 +27,25 @@ In 1949, Claude Shannon published the paper *Programming a Computer for Playing 
 
 A computerised version of Nim was published in 1952, and was able to consistently win games against players 95% of the time ([The New Yorker, 1952](http://www.newyorker.com/magazine/1952/08/02/it))
 
-`TODO: Expand this`
-
 # The Golden Age #
 
 The Golden Age of Video Games revolutionised how we develop and play games today.
 
 ## Game of Life ##
 
-Game of Life is a deterministic, zero-player based, cellular automaton  game developed by Brittish Mathematician John Conway. Conways rules for genetic change are designed to make behaviour of the population unpredictable ([Gardner, 1970](http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm))
+Game of Life is a deterministic, zero-player based, cellular automaton  game developed by British Mathematician John Conway. Conway's rules for genetic change are designed to make behaviour of the population unpredictable ([Gardner, 1970](http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm))
 
 * Every counter with two or three neighbouring counters survives for the next generation
 * Every counter with four or more neighbours dies from overpopulation
 * Every counter with one neighbour or none dies from isolation
 * An empty cell adjacent to exactly three neighbours is a birth cell
-* All births and deaths occur simultaneously consituting a single generation
+* All births and deaths occur simultaneously constituting a single generation
 
 ## Discrete Logic ##
 
-Atari released the infamous Pong in 1972, a table tennis simulator that can be played between two people, but more importantly with a computer controlled opponent. The core intelligence of these games was established using disrete logic (i.e. hardcoded logic gates). ([Monfort, Bogost, 2009](http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false)).
+Atari released the infamous Pong in 1972, a table tennis simulator that can be played between two people, but more importantly with a computer controlled opponent. The core intelligence of these games was established using discrete logic (i.e. hard-coded logic gates). ([Monfort, Bogost, 2009](http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false)).
 
-PacMan, released in 1980, introduced AI patterns in maze environments, with individual pesonalities (or strategies) assigned to each enemy ghost. Ghosts were given specific "goal tiles" depending on their personality which could be exploited by players who knew the underlying discrete logic.
+PacMan, released in 1980, introduced AI patterns in maze environments, with individual personalities (or strategies) assigned to each enemy ghost. Ghosts were given specific "goal tiles" depending on their personality which could be exploited by players who knew the underlying discrete logic.
 
 This discrete logic only gives the illusion of intelligence. This illusion provides little or no actual game logic or decision making and was mainly used due to memory constraints at the time.
 
@@ -55,7 +53,7 @@ This discrete logic only gives the illusion of intelligence. This illusion provi
 
 Random number generators are intelgral to Game AI. It makes the games feel more immersive and "real". Random numbers drive many decisions and events for in-game objects such as graphical effects (rain or transitions), frequency and choice of sound effects, and enemy behaviour.
 
-([Doom, 1997](https://github.com/id-Software/DOOM)) is a primary example of using randomness to esstablish interesting features in a game. It uses an array of 256 integers that are sorted randomly, and stored in a static lookup table. The game references these "seeming random" values throughout the game to make the game more dynamic.
+([Doom, 1997](https://github.com/id-Software/DOOM)) is a primary example of using randomness to establish interesting features in a game. It uses an array of 256 integers that are sorted randomly, and stored in a static lookup table. The game references these "seeming random" values throughout the game to make the game more dynamic.
 
 Jonathan Dowland examined the behaviour of Doom when all values in the "random value" lookup table were set to all 0 (0x00 in Hexadecimal) or 255 (0xFF) ([Downland, 2015](http://jmtd.net/log/deterministic_doom/)). The following are some of his findings:
 
@@ -67,11 +65,19 @@ Jonathan Dowland examined the behaviour of Doom when all values in the "random v
 
 # The 90's Explosion #
 
-As the arcade and video game industry began to wane in the late 80's, gamers began to crave a better quality of gameplay. The goal of the industry then was to create a more challenging and lifelike opponent, which would react to the player like a human.
+As the arcade and video game industry began to wane in the late 1980's, gamers began to crave a better quality of gameplay. The goal of the industry then was to create a more challenging and lifelike opponent, which would react to the player like a human.
 
-## Real Time Strategy ##
+## Dune II - Real Time Strategy ##
 
-## Colin McRae - Use of Neural Networks ##
+Early strategy games implemented simple "turn-based" gameplay. Dune II was the first Real Time Strategy (RTS) that would redefine strategy based games. Concurrent management of multiple units and build strategies within a 3D perspective allowed Dune II to set a new standard fo strategy-based gameplay and AI which would continue into games of today.
+
+## Colin McRae's Rally 2 - Use of Neural Networks ##
+
+Leveraging off his PhD work, Jeff Hannan utilised trained neural networks to control the opposing racers in Colin McRae's Rally 2. For the training process, he used a Resilient Back-Propagation (RPROP) training algorithm with random weights and a single hidden layer, providing sensor outputs his own driving as the input training data ([Hannan, 2001](http://www.ai-junkie.com/misc/hannan/hannan.html)).
+
+There were two components used: Racing Lines and the Driving Model. If the track was wide enough, the racing line needed to be calculated in advance and used as the target for the agent. This racing line represents condensed knowledge about the track such as corners the agent is able to cut, obstacles, or off-road sections, and could be configured for different levels of skill. For narrow roads, the racing line could be considered as the centre of the track.
+
+In order to get the agents to follow the racing line, a driving model is used. This model takes information about the car's state and the racing line, and calculates the controls for the car. After an unsuccessful attempt at manually defining a set of rules to drive the agents, Hannan turned to neural networks for training.
 
 # Current Research Topics #
 The primary goal of Game AI is to entertain. As such, developers tend to avoid using true "academic" AI, opting for short-cuts and efficiency, whilst maintaining some level of intelligence in the system.
@@ -80,21 +86,21 @@ Instead, researchers have redefined the role of artificial intelligence in video
 
 ## Google AI - DeepMind Technologies ##
 
-Founded in 2011 by Dennis Hassabis, and acquired by Google in 2014, Google DeepMind aims to combine "the best techniques from machine learning and systems neuroscince to build powerful general-purpose learning algorithms" ([DeepMind, 2015](http://deepmind.com/)).
+Founded in 2011 by Dennis Hassabis, and acquired by Google in 2014, Google DeepMind aims to combine "the best techniques from machine learning and systems neuroscience to build powerful general-purpose learning algorithms" ([DeepMind, 2015](http://deepmind.com/)).
 
 In 2013, DeepMind published a report detailing the success in using Reinforcement Learning environments, and sensory data, to train a neural network to play Atari 2600 games ([NIPS, 2013](http://arxiv.org/pdf/1312.5602v1.pdf)). Using a modified Q-Learning (a model free) reinforcement learning algorithm, and stochastic gradient descent to update the network weights, their paper proposed a new deep learning model for reinforcement learning and demonstrated its effectiveness at mastering seven Atari 2600 games using only the raw pixels and game score as input.
 
-In an interview with Dennis Hassabis, their network starts off with no prioir knowledge of the game ([The Verge, 2015](http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games)). Early training interations involve the network randomly pressing mapped buttons in order to determine the basic controls and inputs. As expected with Reinforcement Learning, the network adapts to the new game by playing. An interesting observation made was that the network was unable to plan long term actions and hence, struggled with learning maze-based games, such as PacMan.
+In an interview with Dennis Hassabis, their network starts off with no prioir knowledge of the game ([The Verge, 2015](http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games)). Early training interactions involve the network randomly pressing mapped buttons in order to determine the basic controls and inputs. As expected with Reinforcement Learning, the network adapts to the new game by playing. An interesting observation made was that the network was unable to plan long term actions and hence, struggled with learning maze-based games, such as PacMan.
 
 ## The "Mario Lives!" Project ##
 
-The Association for the Advancement of Artificial Intelligece (AAAI) holds an annual video competition to showcase the advances in artificial intelligence in a fun and exciting means.
+The Association for the Advancement of Artificial Intelligence (AAAI) holds an annual video competition to showcase the advances in artificial intelligence in a fun and exciting means.
 
-Computer scientists from the Cognitive Modelling Group at the University of Tubingen, Germany, submitted the *Mario Lives* project as part of this competition in 2015. Their aim was to develop an artifical agent that can become alive in its own world.
+Computer scientists from the Cognitive Modelling Group at the University of Tubingen, Germany, submitted the *Mario Lives* project as part of this competition in 2015. Their aim was to develop an artificial agent that can become alive in its own world.
 
 In the demonstration, Mario is shown to learn from his own experiences. After jumping on Goomba, he is asked "What do you know about Goomba?". The speech recognition and context grammar that underpins the agent allows Mario to respond with "If I jump on Goomba, then it maybe dies". Mario is als shown to learn from what it is told. Mario is told "Goomba dies, when you jump on Goomba". He is able to store this information and refer to it as he responds "If I jump on Goomba, then it certainly dies". ([Ehrenfeld, et. al., 2015](https://www.youtube.com/watch?v=K0nlO87evhY))
 
-"Mario developes a schema based knowledge base, and maintains internal emotive states". These emotive states are used to drive behavioural actions. When he is hungry, Mario will collect coins.
+"Mario develops a schema based knowledge base, and maintains internal emotive states". These emotive states are used to drive behavioural actions. When he is hungry, Mario will collect coins.
 
 # References #
 
