@@ -116,9 +116,11 @@ In the demonstration, Mario is shown to learn from his own experiences. After ju
 8. Siyuan Xu, *History of AI Design in video games and its development in RTS games*, https://sites.google.com/site/myangelcafe/articles/history_ai, Xu, n.d.
 9. Claude Shannon, *Programming a Computer for Playing Chess*, http://www.pi.infn.it/~carosi/chess/shannon.txt Shannon, Published in Pilosophical Magazine, 1950
 10. *DeepMind Technologies*, http://deepmind.com/ DeepMind Technologies, 2015
-11. Mnih, et. al. *PLaying Atari with Deep Reinforcement Learning*, http://arxiv.org/pdf/1312.5602v1.pdf, DeepMind Technologies, Published by NIPS, 2013
+11. Mnih, et. al. *Playing Atari with Deep Reinforcement Learning*, http://arxiv.org/pdf/1312.5602v1.pdf, DeepMind Technologies, Published by NIPS, 2013
 12. The Verge, *Google's AI can learn to play video games*, http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games, 2015
 13. Genesereth, Love, Pell, *General Game Playing: verview of the AAAI Competition*, http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711, AI Magazine, 2005
 14. Ehrenfeld, et. al., 2015, *Mario Lives! An Adaptive Learning AI Approach for Generating a Living and Conversing Mario Agent* https://www.youtube.com/watch?v=AplG6KnOr2Q, AAAI, 2015
 15. Martin Garnder, *Mathematical Games. The fascinating combinations of John Conway's new solitare game "life"*, http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm, Scientific American, 1970
 16. Jonathan Dowland, Deterministic Doom, http://jmtd.net/log/deterministic_doom/, JMTD, 2015
+17. Chad Birch, *Understanding PacMan Ghost Behaviour*, http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior, GameInternals, 2010
+18. Michael Buro, *Call for AI Research in RTS Games*, https://skatgame.net/mburo/ps/RTS-AAAI04.pdf, American Association For Artificial Intelligence, 2004 
