@@ -31,9 +31,23 @@ A computerised version of Nim was published in 1952, and was able to consistentl
 
 # The Golden Age #
 
+The Golden Age of Video Games revolutionised how we develop and play games today.
+
+## Game of Life ##
+
+Game of Life is a deterministic, zero-player based, cellular automaton  game developed by Brittish Mathematician John Conway. Conways rules for genetic change are designed to make behaviour of the population unpredictable ([Gardner, 1970](http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm))
+
+* Every counter with two or three neighbouring counters survives for the next generation
+* Every counter with four or more neighbours dies from overpopulation
+* Every counter with one neighbour or none dies from isolation
+* An empty cell adjacent to exactly three neighbours is a birth cell
+* All births and deaths occur simultaneously consituting a single generation
+
 `TODO: Add notes on Pong, Space Invaders, PacMan, Conways Game of Life`
 
 ## Discrete Logic ##
+
+Atari released the infamous Pong in 1972, a table tennis simulator that can be played between two people, but more importantly with a computer controlled opponent. The core intelligence of these games was established using disrete logic (i.e. hardcoded logic gates). ([Monfort, Bogost, 2009](http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false))
 
 ## Randomness ##
 
@@ -84,3 +98,4 @@ In the demonstration, Mario is shown to learn from his own experiences. After ju
 12. The Verge, *Google's AI can learn to play video games*, http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games, 2015
 13. Genesereth, Love, Pell, *General Game Playing: verview of the AAAI Competition*, http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711, AI Magazine, 2005
 14. Ehrenfeld, et. al., 2015, *Mario Lives! An Adaptive Learning AI Approach for Generating a Living and Conversing Mario Agent* https://www.youtube.com/watch?v=AplG6KnOr2Q, AAAI, 2015
+15. Martin Garnder, *Mathematical Games. The fascinating combinations of John Conway's new solitare game "life"*, http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm, Scientific American, 1970
