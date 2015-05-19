@@ -43,13 +43,27 @@ Game of Life is a deterministic, zero-player based, cellular automaton  game dev
 * An empty cell adjacent to exactly three neighbours is a birth cell
 * All births and deaths occur simultaneously consituting a single generation
 
-`TODO: Add notes on Pong, Space Invaders, PacMan, Conways Game of Life`
-
 ## Discrete Logic ##
 
-Atari released the infamous Pong in 1972, a table tennis simulator that can be played between two people, but more importantly with a computer controlled opponent. The core intelligence of these games was established using disrete logic (i.e. hardcoded logic gates). ([Monfort, Bogost, 2009](http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false))
+Atari released the infamous Pong in 1972, a table tennis simulator that can be played between two people, but more importantly with a computer controlled opponent. The core intelligence of these games was established using disrete logic (i.e. hardcoded logic gates). ([Monfort, Bogost, 2009](http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false)).
+
+PacMan, released in 1980, introduced AI patterns in maze environments, with individual pesonalities (or strategies) assigned to each enemy ghost. Ghosts were given specific "goal tiles" depending on their personality which could be exploited by players who knew the underlying discrete logic.
+
+This discrete logic only gives the illusion of intelligence. This illusion provides little or no actual game logic or decision making and was mainly used due to memory constraints at the time.
 
 ## Randomness ##
+
+Random number generators are intelgral to Game AI. It makes the games feel more immersive and "real". Random numbers drive many decisions and events for in-game objects such as graphical effects (rain or transitions), frequency and choice of sound effects, and enemy behaviour.
+
+([Doom, 1997](https://github.com/id-Software/DOOM)) is a primary example of using randomness to esstablish interesting features in a game. It uses an array of 256 integers that are sorted randomly, and stored in a static lookup table. The game references these "seeming random" values throughout the game to make the game more dynamic.
+
+Jonathan Dowland examined the behaviour of Doom when all values in the "random value" lookup table were set to all 0 (0x00 in Hexadecimal) or 255 (0xFF) ([Downland, 2015](http://jmtd.net/log/deterministic_doom/)). The following are some of his findings:
+
+* Monster make the same sound effect
+* Hitscan weapons (shotgun, chaingun) have no spread
+* Lights will strobe, or never flicker
+* Damage values don't vary
+* Monsters will never make an idle sound with 0x00, but with 0xFF, they constantly play, drowning everything out
 
 # The 90's Explosion #
 
@@ -99,3 +113,4 @@ In the demonstration, Mario is shown to learn from his own experiences. After ju
 13. Genesereth, Love, Pell, *General Game Playing: verview of the AAAI Competition*, http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711, AI Magazine, 2005
 14. Ehrenfeld, et. al., 2015, *Mario Lives! An Adaptive Learning AI Approach for Generating a Living and Conversing Mario Agent* https://www.youtube.com/watch?v=AplG6KnOr2Q, AAAI, 2015
 15. Martin Garnder, *Mathematical Games. The fascinating combinations of John Conway's new solitare game "life"*, http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm, Scientific American, 1970
+16. Jonathan Dowland, Deterministic Doom, http://jmtd.net/log/deterministic_doom/, JMTD, 2015
