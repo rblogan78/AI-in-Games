@@ -45,7 +45,9 @@ Game of Life is a deterministic, zero-player based, cellular automaton  game dev
 
 Atari released the infamous Pong in 1972, a table tennis simulator that can be played between two people, but more importantly with a computer controlled opponent. The core intelligence of these games was established using discrete logic (i.e. hard-coded logic gates). ([Monfort, Bogost, 2009](http://books.google.co.uk/books?id=DqePfdz_x6gC&lpg=PP1&dq=racing+the+beam&pg=PA40&hl=en#v=onepage&f=false)).
 
-PacMan, released in 1980, introduced AI patterns in maze environments, with individual personalities (or strategies) assigned to each enemy ghost. Ghosts were given specific "goal tiles" depending on their personality which could be exploited by players who knew the underlying discrete logic.
+PacMan, released in 1980, introduced AI patterns in maze environments, with individual personalities (or strategies) assigned to each enemy ghost. Rather than having a knowledge or awareness of the maze, or even a rudimentary pathfinding algorithm, the ghosts were given specific "goal tiles" depending on their personality and their current "mode" (scatter/chase/frightened) which could be exploited by players who knew the underlying discrete logic. 
+
+One example of this is the pink ghost's goal tile being set 4 tiles in front of PacMan's position. This would generally lead to the ghost following the player's movements (leading to the ghost's nickname, "shadow"), however could result in the ghost losing a game of "chicken" against the player. When head-to-head, the ghost could recalculate it's goal tile and find that it lies behind itself, thus leading to the ghost radically changing direction away from the player. ([GameInternals, 2010](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior))    
 
 This discrete logic only gives the illusion of intelligence. This illusion provides little or no actual game logic or decision making and was mainly used due to memory constraints at the time.
 
@@ -69,7 +71,9 @@ As the arcade and video game industry began to wane in the late 1980's, gamers b
 
 ## Dune II - Real Time Strategy ##
 
-Early strategy games implemented simple "turn-based" gameplay. Dune II was the first Real Time Strategy (RTS) that would redefine strategy based games. Concurrent management of multiple units and build strategies within a 3D perspective allowed Dune II to set a new standard fo strategy-based gameplay and AI which would continue into games of today.
+Early strategy games implemented simple "turn-based" gameplay. Dune II was the first Real Time Strategy (RTS) that would redefine strategy based games. Concurrent management of multiple units and build strategies within a 3D perspective allowed Dune II to set a new standard fo strategy-based gameplay and AI which would continue into games of today. The AI which was employed set individual goals for it's agents early in the game according to an overall strategy being employed (e.g. build vs combat). This overall strategy could then be switched dynamically by the AI accoring to timing or in response to the player. Despite it being an early precursor to the familar RTS styles of today, the game's AI was less than impressive when measured against today's high standards. For example, it would often pursue a player's single unit with a single minded obsession while the rest of it's forces and base were being attacked by the player.
+
+In interesting element of RTS games is that of AI "cheating". This relates to the amount of knowledge that an enemy AI could or should have about a player's movements. Obviously, a computer player has access to every input by the player at any time, and a sophisticated enough AI would be able to quickly counter any strategy a human player could devise, making the game virtually impossible to beat. Because of this fact, although a certain level of cheating by enemy AI is considered integral to the RTS game environment, it is important for this not to become too sophisticated ([Buro, 2004](https://skatgame.net/mburo/ps/RTS-AAAI04.pdf)).       
 
 ## Colin McRae's Rally 2 - Use of Neural Networks ##
 
@@ -114,9 +118,11 @@ In the demonstration, Mario is shown to learn from his own experiences. After ju
 8. Siyuan Xu, *History of AI Design in video games and its development in RTS games*, https://sites.google.com/site/myangelcafe/articles/history_ai, Xu, n.d.
 9. Claude Shannon, *Programming a Computer for Playing Chess*, http://www.pi.infn.it/~carosi/chess/shannon.txt Shannon, Published in Pilosophical Magazine, 1950
 10. *DeepMind Technologies*, http://deepmind.com/ DeepMind Technologies, 2015
-11. Mnih, et. al. *PLaying Atari with Deep Reinforcement Learning*, http://arxiv.org/pdf/1312.5602v1.pdf, DeepMind Technologies, Published by NIPS, 2013
+11. Mnih, et. al. *Playing Atari with Deep Reinforcement Learning*, http://arxiv.org/pdf/1312.5602v1.pdf, DeepMind Technologies, Published by NIPS, 2013
 12. The Verge, *Google's AI can learn to play video games*, http://www.theverge.com/2015/2/25/8108399/google-ai-deepmind-video-games, 2015
 13. Genesereth, Love, Pell, *General Game Playing: verview of the AAAI Competition*, http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711, AI Magazine, 2005
 14. Ehrenfeld, et. al., 2015, *Mario Lives! An Adaptive Learning AI Approach for Generating a Living and Conversing Mario Agent* https://www.youtube.com/watch?v=AplG6KnOr2Q, AAAI, 2015
 15. Martin Garnder, *Mathematical Games. The fascinating combinations of John Conway's new solitare game "life"*, http://web.archive.org/web/20090603015231/http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm, Scientific American, 1970
 16. Jonathan Dowland, Deterministic Doom, http://jmtd.net/log/deterministic_doom/, JMTD, 2015
+17. Chad Birch, *Understanding PacMan Ghost Behaviour*, http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior, GameInternals, 2010
+18. Michael Buro, *Call for AI Research in RTS Games*, https://skatgame.net/mburo/ps/RTS-AAAI04.pdf, American Association For Artificial Intelligence, 2004 
